@@ -1,1 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Candal&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+
+body {
+	font-family: $ff-body;
+	font-size: 1.3125rem;
+	line-height: 1.6;
+	color: $clr-brown-dark;
+	font-weight: $fw-normal;
+}
+
+.section__title,
+.section__subtitle {
+	font-family: $ff-title;
+}
