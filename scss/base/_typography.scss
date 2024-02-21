@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Candal&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
 
 body {
+	margin: 0;
 	font-family: $ff-body;
-	font-size: 1.3125rem;
+	font-size: 1rem;
 	line-height: 1.5;
 	color: $clr-brown-dark;
 	font-weight: $fw-normal;
@@ -14,6 +15,10 @@ h3,
 p,
 figure {
 	margin: 0;
+}
+
+p {
+	margin-bottom: 1em;
 }
 
 .section__title,
