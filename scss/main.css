@@ -33,4 +33,10 @@ figure {
   text-transform: uppercase;
   letter-spacing: 2px;
   margin-bottom: 0.5em;
+}
+
+.intro {
+  background-image: url(..images/hero-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }/*# sourceMappingURL=main.css.map */

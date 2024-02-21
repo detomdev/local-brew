@@ -18,19 +18,25 @@ figure {
 .section__title,
 .section__subtitle {
 	font-family: "Candal", sans-serif;
-	line-height: 1.25;
+	line-height: 1;
 }
 
 .section__title {
-	font-size: 3.75rem;
+	font-size: 4.75rem;
 	color: #414a4d;
 }
 
 .section__subtitle {
-	font-size: 1.5rem;
+	font-size: 1.69rem;
 	color: #a3b9bf;
 	font-style: italic;
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	margin-bottom: 0.5em;
+}
+
+.intro {
+	background-image: url(..images/hero-bg.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
 } /*# sourceMappingURL=main.css.map */
