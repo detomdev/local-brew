@@ -128,9 +128,39 @@ nav a:hover {
   margin: 3em auto;
   position: relative;
 }
+.grid-carousel__item {
+  transform: scale(0.7);
+}
+.grid-carousel__item:nth-of-type(1) {
+  order: 1;
+}
+.grid-carousel__item:nth-of-type(2) {
+  order: 2;
+}
+.grid-carousel__item:nth-of-type(3) {
+  order: 3;
+}
+.grid-carousel__item:nth-of-type(4) {
+  order: 4;
+}
+.grid-carousel__item:nth-of-type(5) {
+  order: 5;
+}
+.grid-carousel__item.featured {
+  transform: scale(1);
+}
+.grid-carousel__caption {
+  opacity: 0;
+}
+.grid-carousel__item.featured .grid-carousel__caption {
+  opacity: 1;
+}
 .grid-carousel__button {
   all: unset;
   padding: 0.5em;
+}
+.grid-carousel__button:last-of-type {
+  order: 99;
 }
 .grid-carousel::before, .grid-carousel::after {
   content: "";
@@ -140,6 +170,7 @@ nav a:hover {
   bottom: 0;
   left: 0;
   right: 0;
+  z-index: 10;
 }
 .grid-carousel::before {
   grid-column: 2/4;
