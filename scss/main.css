@@ -52,10 +52,14 @@ img {
   height: auto;
 }
 
+.logo--light * {
+  fill: #d3cdc1;
+}
+
 .section {
   display: grid;
   grid: auto-flow/minmax(1em, 1fr) minmax(300px, 650px) minmax(1em, 1fr);
-  padding: 5em 0;
+  padding: 5em 0 0;
 }
 .section__title, .section__subtitle,
 .section p {
@@ -197,10 +201,22 @@ nav a:hover {
 }
 .section--brewery__image {
   grid-column: 1/2;
+  margin-left: auto;
 }
 .section--brewery__text-box {
   grid-column: 2/3;
   align-self: center;
+}
+
+footer {
+  text-align: center;
+  color: #d3cdc1;
+  padding-bottom: 5em;
+}
+footer p {
+  font-family: "Candal", sans-serif;
+  line-height: 1;
+  margin: 0;
 }
 
 .card {

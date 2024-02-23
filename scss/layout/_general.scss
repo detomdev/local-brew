@@ -9,10 +9,14 @@ img {
 	height: auto;
 }
 
+.logo--light * {
+	fill: $clr-brown-light;
+}
+
 .section {
 	display: grid;
 	grid: auto-flow / minmax(1em, 1fr) minmax(300px, 650px) minmax(1em, 1fr);
-	padding: 5em 0;
+	padding: 5em 0 0;
 
 	&__title,
 	&__subtitle,
