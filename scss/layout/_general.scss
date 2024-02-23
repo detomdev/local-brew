@@ -6,6 +6,7 @@
 
 img {
 	max-width: 100%;
+	height: auto;
 }
 
 .section {
@@ -21,5 +22,5 @@ img {
 }
 
 .section--card {
-	grid: auto-flow / minmax(1em, 1fr) repeat(6, 1fr) minmax(1em, 1fr);
+	grid: repeat(4, 1fr) / minmax(1em, 1fr) repeat(6, 1fr) minmax(1em, 1fr);
 }

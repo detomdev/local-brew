@@ -27,8 +27,9 @@ p {
 }
 
 .section__title {
-  font-size: 4.75rem;
+  font-size: 4rem;
   color: #414a4d;
+  line-height: 1.5;
 }
 
 .section__subtitle {
@@ -46,6 +47,11 @@ p {
   box-sizing: border-box;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .section {
   display: grid;
   grid: auto-flow/minmax(1em, 1fr) minmax(300px, 650px) minmax(1em, 1fr);
@@ -54,6 +60,10 @@ p {
 .section__title, .section__subtitle,
 .section p {
   grid-column: 2/3;
+}
+
+.section--card {
+  grid: repeat(4, 1fr)/minmax(1em, 1fr) repeat(6, 1fr) minmax(1em, 1fr);
 }
 
 .logo {
@@ -179,4 +189,75 @@ nav a:hover {
 .grid-carousel::after {
   grid-column: -2/-4;
   background: linear-gradient(to left, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.6));
+}
+
+.section--brewery {
+  grid: auto-flow/minmax(300px, 2fr) minmax(300px, 650px) 1fr;
+  grid-column-gap: 2em;
+}
+.section--brewery__image {
+  grid-column: 1/2;
+}
+.section--brewery__text-box {
+  grid-column: 2/3;
+  align-self: center;
+}
+
+.card {
+  grid-row: 1/4;
+  padding: 2em;
+  outline: 2px solid currentColor;
+  outline-offset: -1em;
+  box-shadow: 0 5px 0.5em rgba(0, 0, 0, 0.4);
+}
+.card--dark {
+  background: #414a4d;
+  color: #a3b9bf;
+}
+.card--dark .section__title {
+  color: white;
+}
+.card--light {
+  background: white;
+}
+.card--start {
+  grid-column: 2/span 4;
+}
+.card--end {
+  grid-column: 4/span 4;
+}
+.card__image {
+  z-index: -1;
+  grid-row: 2/5;
+}
+.card__image--start {
+  grid-column: 2/span 3;
+}
+.card__image--end {
+  grid-column: 5/span 3;
+}
+
+.btn {
+  display: inline-block;
+  font-family: "Candal", sans-serif;
+  text-transform: uppercase;
+  padding: 0.25em 2em;
+  text-decoration: none;
+  margin: 0.5em 0 0;
+  border-radius: 0.4em;
+}
+.btn:hover {
+  opacity: 0.8;
+}
+.btn--light {
+  background: #d3cdc1;
+  color: #414a4d;
+}
+.btn--dark {
+  background: #414a4d;
+  color: white;
+}
+.btn--outline {
+  border: 2px solid currentColor;
+  color: #414a4d;
 }/*# sourceMappingURL=main.css.map */
